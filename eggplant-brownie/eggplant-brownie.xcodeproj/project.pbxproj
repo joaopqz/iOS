@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131D44ED25A73B950041E879 /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D44EC25A73B950041E879 /* RefeicoesTableViewController.swift */; };
 		134B4C1C25A32FCE00395247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B4C1B25A32FCE00395247 /* AppDelegate.swift */; };
 		134B4C1E25A32FCE00395247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B4C1D25A32FCE00395247 /* SceneDelegate.swift */; };
 		134B4C2025A32FCE00395247 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B4C1F25A32FCE00395247 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131D44EC25A73B950041E879 /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 		134B4C1825A32FCE00395247 /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		134B4C1B25A32FCE00395247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		134B4C1D25A32FCE00395247 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				134B4C1F25A32FCE00395247 /* ViewController.swift */,
+				131D44EC25A73B950041E879 /* RefeicoesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				134B4C3325A3802000395247 /* Item.swift in Sources */,
 				134B4C2025A32FCE00395247 /* ViewController.swift in Sources */,
 				134B4C1C25A32FCE00395247 /* AppDelegate.swift in Sources */,
+				131D44ED25A73B950041E879 /* RefeicoesTableViewController.swift in Sources */,
 				134B4C1E25A32FCE00395247 /* SceneDelegate.swift in Sources */,
 				134B4C3125A37F3800395247 /* Refeicao.swift in Sources */,
 			);
