@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //MARK: - IBOutlets
     @IBOutlet weak var nomeTextField: UITextField?
     @IBOutlet weak var felicidadeTextField: UITextField?
-    @IBOutlet weak var itensTableView: UITableView!
+    @IBOutlet weak var itensTableView: UITableView?
     
     
     // MARK: - View Life Cycle
@@ -46,7 +46,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func add(_ item: Item) {
         itens.append(item)
-        itensTableView.reloadData()
+        
+        if let tableView = itensTableView{
+            tableView.reloadData()
+        }
+        else{
+            Alerta(controller: self).exibe(mensagem: "Não foi possível atualizar a tabela")
+        }
     }
     
     
@@ -84,19 +90,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //MARK: - IBActions
     @IBAction func AdicionarButton(_ sender: Any) {
         
-        guard let nomeDaRefeicao = nomeTextField?.text else{
-            return
-        }
+
         
-        guard let felicidadeDaRefeicao = felicidadeTextField?.text, let felicidade = Int(felicidadeDaRefeicao) else{
-            return
-        }
-        
-        let refeicao = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade, itens: itensSelecionados)
+        guard let refeicao = recuperaRefeicaoDoFormulario() else{ return }
         delegate?.add(refeicao)
         
         navigationController?.popViewController(animated: true)
         
+    }
+    
+    //MARK: - Métodos
+    func recuperaRefeicaoDoFormulario() -> Refeicao? {
+        guard let nomeDaRefeicao = nomeTextField?.text else{
+            Alerta(controller: self).exibe(mensagem: "Erro ao ler o campo nome")
+            return nil
+        }
+        
+        guard let felicidadeDaRefeicao = felicidadeTextField?.text, let felicidade = Int(felicidadeDaRefeicao) else{
+            Alerta(controller: self).exibe(mensagem: "Erro ao ler o campo felicidade")
+            return nil
+        }
+        let refeicao = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade, itens: itensSelecionados)
+        return refeicao
     }
     
    

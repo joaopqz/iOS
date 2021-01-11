@@ -18,6 +18,7 @@
 		134B4C3325A3802000395247 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B4C3225A3802000395247 /* Item.swift */; };
 		13DDBEDE25A8723A003624C7 /* AdicionarItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DDBEDC25A8723A003624C7 /* AdicionarItensViewController.swift */; };
 		13DDBEDF25A8723A003624C7 /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DDBEDD25A8723A003624C7 /* AdicionarItensViewController.xib */; };
+		13F4182425ACB20300CE652E /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4182325ACB20200CE652E /* Alerta.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		134B4C3225A3802000395247 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		13DDBEDC25A8723A003624C7 /* AdicionarItensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarItensViewController.swift; sourceTree = "<group>"; };
 		13DDBEDD25A8723A003624C7 /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
+		13F4182325ACB20200CE652E /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				134B4C3225A3802000395247 /* Item.swift */,
 				134B4C3025A37F3800395247 /* Refeicao.swift */,
+				13F4182325ACB20200CE652E /* Alerta.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F4182425ACB20300CE652E /* Alerta.swift in Sources */,
 				134B4C3325A3802000395247 /* Item.swift in Sources */,
 				134B4C2025A32FCE00395247 /* ViewController.swift in Sources */,
 				13DDBEDE25A8723A003624C7 /* AdicionarItensViewController.swift in Sources */,
