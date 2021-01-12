@@ -32,12 +32,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: - View Life Cycle
     
   override func viewDidLoad() {
-        super.viewDidLoad()
-    
+    super.viewDidLoad()
+
     let botaoAdicionarItem = UIBarButtonItem(title: "adicionar", style: .plain, target: self, action: #selector(adicionarItem))
+
+    navigationItem.rightBarButtonItem = botaoAdicionarItem
+
     
-        navigationItem.rightBarButtonItem = botaoAdicionarItem
+    do{
+        guard let diretorio = recuperaDiretorio() else{return}
+        let dados = try Data(contentsOf: diretorio)
+        let itensSalvos = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dados) as! Array<Item>
+        itens = itensSalvos
+        
+    } catch{
+        print(error.localizedDescription)
     }
+   }
     
     @objc func adicionarItem(){
         let adicionarItensViewController = AdicionarItensViewController(delegate: self)
@@ -53,6 +64,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         else{
             Alerta(controller: self).exibe(mensagem: "Não foi possível atualizar a tabela")
         }
+        
+        do{
+            let dados = try NSKeyedArchiver.archivedData(withRootObject: itens, requiringSecureCoding: false)
+            guard let caminho = recuperaDiretorio() else{return}
+            try dados.write(to: caminho)
+            
+        } catch{
+            print(error.localizedDescription)
+        }
+    }
+    
+    func recuperaDiretorio () -> URL?{
+        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {return nil}
+        let caminho = diretorio.appendingPathComponent("itens")
+        
+        return caminho
     }
     
     
