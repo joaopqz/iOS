@@ -29,14 +29,18 @@ protocol HttpClient {
 
 class RemoteAddAccountTests: XCTestCase {
 
-    func test_add_should_call_httpClient_with_correct_url() {
+    func test_add_should_call_httpClient_with_correct_url () {
         let url = URL(string: "http://any-url.com")!
         let httpClientSpy = HttpClientSpy()
         let sut = RemoteAddAccount(url: url, httpClient: httpClientSpy) //system under test... classe a ser testada.
         sut.add()
         XCTAssertEqual(httpClientSpy.url, url)
     }
+    
+}
 
+extension RemoteAddAccountTests{
+    
     class HttpClientSpy: HttpClient {
         var url: URL?
         
@@ -44,5 +48,4 @@ class RemoteAddAccountTests: XCTestCase {
             self.url = url
         }
     }
-    
 }
