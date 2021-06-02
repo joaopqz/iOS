@@ -6,14 +6,8 @@
 //
 
 import XCTest
-import Data
 import Domain
-
-
-protocol HttpClient {
-    
-    func post(to url: URL, with data: Data?)
-}
+import Data
 
 class RemoteAddAccountTests: XCTestCase {
 
@@ -45,7 +39,7 @@ extension RemoteAddAccountTests{
         return (sut, httpClientSpy)
     }
     
-    class HttpClientSpy: HttpClient {
+    class HttpClientSpy: HttpPostClient {
         var url: URL?
         var data: Data?
         
