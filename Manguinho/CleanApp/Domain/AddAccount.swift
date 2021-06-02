@@ -13,7 +13,7 @@ import Foundation
     
 }
 
-public struct AddAccountModel: Codable {
+public struct AddAccountModel:Model {
     public var name: String
     public var email: String
     public var password: String
