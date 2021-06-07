@@ -1,10 +1,3 @@
-//
-//  AddAccount.swift
-//  Domain
-//
-//  Created by João Queiroz | Gerencianet on 31/05/21.
-//
-
 import Foundation
 
  protocol AddAccount{
