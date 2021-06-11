@@ -23,9 +23,9 @@ public final class SignUpPresenter {
             return "Campo EMAIL é obrigatório!!"
         } else if viewModel.password == nil || viewModel.password!.isEmpty {
              return  "Campo SENHA é obrigatório!!"
-        } else if viewModel.passwordConfimation == nil || viewModel.passwordConfimation!.isEmpty {
+        } else if viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty {
             return "Campo CONFIRMAR SENHA é obrigatório!!"
-        } else if viewModel.passwordConfimation != viewModel.password{
+        } else if viewModel.passwordConfirmation != viewModel.password{
             return "Falha ao confirmar senha!!"
         } else if !emailValidator.isValid(email:viewModel.email!){
             return "Email inválido!!"
@@ -39,12 +39,12 @@ public struct SignUpViewModel{
     public var name: String?
     public var email: String?
     public var password: String?
-    public var passwordConfimation: String?
+    public var passwordConfirmation: String?
     
-    public init (name: String? = nil, email: String? = nil, password: String? = nil, passwordConfimation: String? = nil){
+    public init (name: String? = nil, email: String? = nil, password: String? = nil, passwordConfirmation: String? = nil){
         self.name = name
         self.email = email
         self.password = password
-        self.passwordConfimation = passwordConfimation
+        self.passwordConfirmation = passwordConfirmation
     }
 }
