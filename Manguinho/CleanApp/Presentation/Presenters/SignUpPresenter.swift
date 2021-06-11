@@ -1,18 +1,26 @@
 import Foundation
+import Domain
 
 public final class SignUpPresenter {
     
     private let alertView: AlertView
     private let emailValidator: EmailValidator
+    private let addAccount: AddAccount
     
-    public init (alertView: AlertView, emailValidator: EmailValidator){
+    public init (alertView: AlertView, emailValidator: EmailValidator, addAccount: AddAccount){
         self.alertView = alertView
         self.emailValidator = emailValidator
+        self.addAccount = addAccount
     }
     
     public  func signUp(viewModel: SignUpViewModel){
         if let message = validate(viewModel: viewModel) {
             alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
+        } else{
+            let addAccountModel = AddAccountModel(name: viewModel.name!, email: viewModel.email!, password: viewModel.password!, passwordConfimation: viewModel.passwordConfirmation!)
+            addAccount.add(addAccountModel: addAccountModel) { _ in
+                
+            }
         }
     }
     
@@ -26,9 +34,9 @@ public final class SignUpPresenter {
         } else if viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty {
             return "Campo CONFIRMAR SENHA é obrigatório!!"
         } else if viewModel.passwordConfirmation != viewModel.password{
-            return "Falha ao confirmar senha!!"
+            return "Campo CONFIRMAR SENHA é inválido!!"
         } else if !emailValidator.isValid(email:viewModel.email!){
-            return "Email inválido!!"
+            return "Campo EMAIL é inválido!!"
         }
         return nil
     }

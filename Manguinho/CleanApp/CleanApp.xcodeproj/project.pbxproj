@@ -38,6 +38,7 @@
 		A5FA2E2826739AF20045F2E8 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11CC266524D9003D4F0A /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5FA2E2E26739B8D0045F2E8 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E2D26739B8D0045F2E8 /* AlertView.swift */; };
 		A5FA2E332673A5D80045F2E8 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E322673A5D80045F2E8 /* EmailValidator.swift */; };
+		A5FA2E342673D3F00045F2E8 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F98A8266F9A0C0047A4EE /* AccountModelFactory.swift */; };
 		A5FAE90F266E8ADD00681E61 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAE90E266E8ADD00681E61 /* ExtensionHelpers.swift */; };
 /* End PBXBuildFile section */
 
@@ -803,6 +804,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5FA2E342673D3F00045F2E8 /* AccountModelFactory.swift in Sources */,
 				A5FA2E1C267389ED0045F2E8 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
