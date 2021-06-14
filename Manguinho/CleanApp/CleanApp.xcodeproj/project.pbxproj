@@ -19,6 +19,7 @@
 		A50F98CD266FAE560047A4EE /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F98A3266F994C0047A4EE /* TestFactories.swift */; };
 		A52AF6A126727A0100876CA2 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AF6A026727A0100876CA2 /* AlamofireAdapter.swift */; };
 		A52AF6A526727BA600876CA2 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AF6A426727BA600876CA2 /* UrlProtocolStub.swift */; };
+		A5518A322677CDF500515DE6 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F8E26779E4C00288E2D /* SignUpViewModel.swift */; };
 		A564CA302667D072002DC162 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564CA2F2667D072002DC162 /* DomainError.swift */; };
 		A58543DC2677A5B400682F6F /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543DB2677A5B400682F6F /* AlertViewSpy.swift */; };
 		A58543DF2677A5F900682F6F /* EmailValidatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543DE2677A5F900682F6F /* EmailValidatorSpy.swift */; };
@@ -991,6 +992,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5518A322677CDF500515DE6 /* SignUpViewModel.swift in Sources */,
 				A585440B2677BF6800682F6F /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
