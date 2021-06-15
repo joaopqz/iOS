@@ -16,7 +16,7 @@ public final class SignUpPresenter {
         self.loadingView = loadingView
     }
     
-    public  func signUp(viewModel: SignUpViewModel){
+    public func signUp(viewModel: SignUpViewModel){
         if let message = validate(viewModel: viewModel) {
             alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
         } else{
