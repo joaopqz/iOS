@@ -39,6 +39,7 @@
 		A5A44F9226779F7B00288E2D /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E2526739AC10045F2E8 /* SignUpPresenter.swift */; };
 		A5A44F932677A03500288E2D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11DD26652BBF003D4F0A /* Data.framework */; };
 		A5A44F942677A03500288E2D /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11DD26652BBF003D4F0A /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5AFDF2F2678D3B400E99919 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFDF2E2678D3B400E99919 /* TestExtensions.swift */; };
 		A5BC11D526652A4E003D4F0A /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC11D426652A4E003D4F0A /* AddAccount.swift */; };
 		A5BC11D726652B74003D4F0A /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC11D626652B74003D4F0A /* AccountModel.swift */; };
 		A5BC11E626652BBF003D4F0A /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11DD26652BBF003D4F0A /* Data.framework */; };
@@ -202,6 +203,7 @@
 		A5A44F8B2677923100288E2D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A5A44F8E26779E4C00288E2D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		A5A44F9026779EAC00288E2D /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
+		A5AFDF2E2678D3B400E99919 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		A5BC11CC266524D9003D4F0A /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BC11CF266524D9003D4F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5BC11D426652A4E003D4F0A /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -451,6 +453,7 @@
 			isa = PBXGroup;
 			children = (
 				A5AFDF2B2678D08900E99919 /* Scenes */,
+				A58543F12677BC6900682F6F /* Info.plist */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 		A58543FA2677BC6A00682F6F /* UITests */ = {
 			isa = PBXGroup;
 			children = (
+				A5AFDF2D2678D39000E99919 /* Helpers */,
 				A5AFDF2C2678D09300E99919 /* Scenes */,
 				A58543FD2677BC6A00682F6F /* Info.plist */,
 			);
@@ -507,6 +511,14 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		A5AFDF2D2678D39000E99919 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A5AFDF2E2678D3B400E99919 /* TestExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		A5BC11A72665242C003D4F0A = {
 			isa = PBXGroup;
 			children = (
@@ -518,7 +530,6 @@
 				A5FA2E0F267389ED0045F2E8 /* Presentation */,
 				A5FA2E1A267389ED0045F2E8 /* PresentationTests */,
 				A58543EF2677BC6900682F6F /* UI */,
-				A58543F12677BC6900682F6F /* Info.plist */,
 				A58543FA2677BC6A00682F6F /* UITests */,
 				A5BC11B12665242C003D4F0A /* Products */,
 				A5BC11F426652BEB003D4F0A /* Frameworks */,
@@ -1034,6 +1045,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A58543FC2677BC6A00682F6F /* SignUpViewControllerTests.swift in Sources */,
+				A5AFDF2F2678D3B400E99919 /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1330,7 +1342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaopqz.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1351,7 +1363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaopqz.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
