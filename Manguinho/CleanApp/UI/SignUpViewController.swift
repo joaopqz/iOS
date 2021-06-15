@@ -5,6 +5,10 @@ import Presentation
 final class SignUpViewController: UIViewController {
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var nameTF: UITextField!
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var passwordConfirmationTF: UITextField!
     
     var signUp: ((SignUpViewModel) -> Void)?
     
@@ -20,7 +24,8 @@ final class SignUpViewController: UIViewController {
     }
     
     @objc private func saveButtonTapped() {
-        signUp?(SignUpViewModel(name: nil, email: nil, password: nil, passwordConfirmation: nil))
+        let viewModel = SignUpViewModel(name: nameTF?.text, email: emailTF?.text, password: passwordTF?.text, passwordConfirmation: passwordConfirmationTF?.text)
+        signUp?(viewModel)
     }
     
 }
