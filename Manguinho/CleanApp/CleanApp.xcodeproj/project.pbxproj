@@ -88,6 +88,7 @@
 		A5EC87AD267A3581006E5AA6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC87AC267A3581006E5AA6 /* Environment.swift */; };
 		A5EC87B1267A4752006E5AA6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585440A2677BF6800682F6F /* SignUpViewController.swift */; };
 		A5EC87B3267A4887006E5AA6 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543E72677A73200682F6F /* TestFactories.swift */; };
+		A5EC87B6267A51C5006E5AA6 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC87B5267A51C5006E5AA6 /* MainQueueDispatchDecorator.swift */; };
 		A5FA2E17267389ED0045F2E8 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FA2E0E267389ED0045F2E8 /* Presentation.framework */; };
 		A5FA2E1C267389ED0045F2E8 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E1B267389ED0045F2E8 /* SignUpPresenterTests.swift */; };
 		A5FA2E2726739AF20045F2E8 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11CC266524D9003D4F0A /* Domain.framework */; };
@@ -378,6 +379,7 @@
 		A5EC87AA267A34F0006E5AA6 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		A5EC87AB267A3565006E5AA6 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		A5EC87AC267A3581006E5AA6 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		A5EC87B5267A51C5006E5AA6 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		A5FA2E0E267389ED0045F2E8 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5FA2E11267389ED0045F2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5FA2E16267389ED0045F2E8 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -642,6 +644,7 @@
 		A56D6F2A2678F46100D9ED12 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A5EC87B4267A51AF006E5AA6 /* Decorators */,
 				A5EC87A8267A345A006E5AA6 /* Env */,
 				A5EC87A4267A29C7006E5AA6 /* Proxies */,
 				A56D6F7D2679201F00D9ED12 /* Composers */,
@@ -908,6 +911,14 @@
 				A56D6F422678F46300D9ED12 /* SignUpComposerTests.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		A5EC87B4267A51AF006E5AA6 /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				A5EC87B5267A51C5006E5AA6 /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Decorators;
 			sourceTree = "<group>";
 		};
 		A5FA2E0F267389ED0045F2E8 /* Presentation */ = {
@@ -1542,6 +1553,7 @@
 				A56D6F762678F86400D9ED12 /* Storyboarded.swift in Sources */,
 				A5EC87AD267A3581006E5AA6 /* Environment.swift in Sources */,
 				A56D6F7F2679203200D9ED12 /* SignUpComposer.swift in Sources */,
+				A5EC87B6267A51C5006E5AA6 /* MainQueueDispatchDecorator.swift in Sources */,
 				A5EC87B1267A4752006E5AA6 /* SignUpViewController.swift in Sources */,
 				A56D6F7C26791FA000D9ED12 /* UseCaseFactory.swift in Sources */,
 				A56D6F2E2678F46100D9ED12 /* SceneDelegate.swift in Sources */,
