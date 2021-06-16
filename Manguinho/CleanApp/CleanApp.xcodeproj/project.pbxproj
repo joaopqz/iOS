@@ -87,6 +87,7 @@
 		A5EC87A2267A1DAE006E5AA6 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543E22677A63D00682F6F /* AddAccountSpy.swift */; };
 		A5EC87A3267A1DCF006E5AA6 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F98A1266F98E10047A4EE /* TestExtensions.swift */; };
 		A5EC87A6267A29D8006E5AA6 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC87A5267A29D8006E5AA6 /* WeakVarProxy.swift */; };
+		A5EC87AD267A3581006E5AA6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC87AC267A3581006E5AA6 /* Environment.swift */; };
 		A5FA2E17267389ED0045F2E8 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FA2E0E267389ED0045F2E8 /* Presentation.framework */; };
 		A5FA2E1C267389ED0045F2E8 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E1B267389ED0045F2E8 /* SignUpPresenterTests.swift */; };
 		A5FA2E2726739AF20045F2E8 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11CC266524D9003D4F0A /* Domain.framework */; };
@@ -373,6 +374,10 @@
 		A5BE34022667AFC5000E360E /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 		A5D06B75266E426200960538 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		A5EC87A5267A29D8006E5AA6 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
+		A5EC87A9267A347E006E5AA6 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		A5EC87AA267A34F0006E5AA6 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		A5EC87AB267A3565006E5AA6 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A5EC87AC267A3581006E5AA6 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		A5FA2E0E267389ED0045F2E8 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5FA2E11267389ED0045F2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5FA2E16267389ED0045F2E8 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -637,6 +642,7 @@
 		A56D6F2A2678F46100D9ED12 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A5EC87A8267A345A006E5AA6 /* Env */,
 				A5EC87A4267A29C7006E5AA6 /* Proxies */,
 				A56D6F7D2679201F00D9ED12 /* Composers */,
 				A56D6F722678F61C00D9ED12 /* Factories */,
@@ -884,6 +890,16 @@
 				A5EC87A5267A29D8006E5AA6 /* WeakVarProxy.swift */,
 			);
 			path = Proxies;
+			sourceTree = "<group>";
+		};
+		A5EC87A8267A345A006E5AA6 /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				A5EC87A9267A347E006E5AA6 /* Debug.xcconfig */,
+				A5EC87AA267A34F0006E5AA6 /* Release.xcconfig */,
+				A5EC87AC267A3581006E5AA6 /* Environment.swift */,
+			);
+			path = Env;
 			sourceTree = "<group>";
 		};
 		A5FA2E0F267389ED0045F2E8 /* Presentation */ = {
@@ -1339,6 +1355,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = A5BC11A72665242C003D4F0A;
 			packageReferences = (
@@ -1515,6 +1532,7 @@
 				A5EC87A6267A29D8006E5AA6 /* WeakVarProxy.swift in Sources */,
 				A56D6F2C2678F46100D9ED12 /* AppDelegate.swift in Sources */,
 				A56D6F762678F86400D9ED12 /* Storyboarded.swift in Sources */,
+				A5EC87AD267A3581006E5AA6 /* Environment.swift in Sources */,
 				A56D6F752678F66500D9ED12 /* SignUpViewController.swift in Sources */,
 				A56D6F7F2679203200D9ED12 /* SignUpComposer.swift in Sources */,
 				A56D6F7C26791FA000D9ED12 /* UseCaseFactory.swift in Sources */,
@@ -1729,6 +1747,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A56D6F372678F46300D9ED12 /* Base */,
+				A5EC87AB267A3565006E5AA6 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1944,6 +1963,7 @@
 		};
 		A56D6F512678F46300D9ED12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5EC87A9267A347E006E5AA6 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1962,6 +1982,7 @@
 		};
 		A56D6F522678F46300D9ED12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5EC87AA267A34F0006E5AA6 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2165,6 +2186,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2226,6 +2248,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
