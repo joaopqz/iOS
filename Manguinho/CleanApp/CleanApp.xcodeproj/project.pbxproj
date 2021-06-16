@@ -87,6 +87,7 @@
 		A5EC87A6267A29D8006E5AA6 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC87A5267A29D8006E5AA6 /* WeakVarProxy.swift */; };
 		A5EC87AD267A3581006E5AA6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC87AC267A3581006E5AA6 /* Environment.swift */; };
 		A5EC87B1267A4752006E5AA6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585440A2677BF6800682F6F /* SignUpViewController.swift */; };
+		A5EC87B3267A4887006E5AA6 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543E72677A73200682F6F /* TestFactories.swift */; };
 		A5FA2E17267389ED0045F2E8 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FA2E0E267389ED0045F2E8 /* Presentation.framework */; };
 		A5FA2E1C267389ED0045F2E8 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E1B267389ED0045F2E8 /* SignUpPresenterTests.swift */; };
 		A5FA2E2726739AF20045F2E8 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11CC266524D9003D4F0A /* Domain.framework */; };
@@ -1553,6 +1554,7 @@
 			files = (
 				A5EC87A2267A1DAE006E5AA6 /* AddAccountSpy.swift in Sources */,
 				A56D6F432678F46300D9ED12 /* SignUpComposerTests.swift in Sources */,
+				A5EC87B3267A4887006E5AA6 /* TestFactories.swift in Sources */,
 				A5EC87A3267A1DCF006E5AA6 /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
