@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A56D6F282678F46100D9ED12"
-               BuildableName = "Main.app"
-               BlueprintName = "Main"
+               BlueprintIdentifier = "A5FA2E0D267389ED0045F2E8"
+               BuildableName = "Presentation.framework"
+               BlueprintName = "Presentation"
+               ReferencedContainer = "container:CleanApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A5FA2E15267389ED0045F2E8"
+               BuildableName = "PresentationTests.xctest"
+               BlueprintName = "PresentationTests"
                ReferencedContainer = "container:CleanApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,17 +41,16 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      enableThreadSanitizer = "YES"
-      language = "pt-BR"
-      region = "BR">
+      enableThreadSanitizer = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A56D6F3D2678F46300D9ED12"
-               BuildableName = "MainTests.xctest"
-               BlueprintName = "MainTests"
+               BlueprintIdentifier = "A5FA2E15267389ED0045F2E8"
+               BuildableName = "PresentationTests.xctest"
+               BlueprintName = "PresentationTests"
                ReferencedContainer = "container:CleanApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -53,16 +66,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A56D6F282678F46100D9ED12"
-            BuildableName = "Main.app"
-            BlueprintName = "Main"
-            ReferencedContainer = "container:CleanApp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -70,16 +73,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A56D6F282678F46100D9ED12"
-            BuildableName = "Main.app"
-            BlueprintName = "Main"
+            BlueprintIdentifier = "A5FA2E0D267389ED0045F2E8"
+            BuildableName = "Presentation.framework"
+            BlueprintName = "Presentation"
             ReferencedContainer = "container:CleanApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

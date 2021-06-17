@@ -1,17 +1,17 @@
 import Foundation
-import Presentation
+import Validation
 
-class EmailValidatorSpy: EmailValidator {
+public class EmailValidatorSpy: EmailValidator {
     
     var isValid = true
     var email: String?
     
-    func isValid(email: String) -> Bool {
+    public func isValid(email: String) -> Bool {
         self.email = email
         return isValid
     }
     
-    func simulateInvalidEmail(){
+   public func simulateInvalidEmail(){
         return isValid = false
     }
     
