@@ -2,7 +2,7 @@ import Foundation
 import Domain
 
 func makeAccountModel() -> AccountModel{
-    return  AccountModel(id: "any_id", name: "John Doe", email: "johndoe@mail.com", password: "secret")
+    return  AccountModel(accessToken: "A52sd54SV")
 }
 
 func makeAddAccountModel() -> AddAccountModel{
