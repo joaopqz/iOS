@@ -60,7 +60,6 @@
 		A56D6F762678F86400D9ED12 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6F002678E3FC00D9ED12 /* Storyboarded.swift */; };
 		A56D6F772678F92400D9ED12 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E2526739AC10045F2E8 /* SignUpPresenter.swift */; };
 		A56D6F782678FA7B00D9ED12 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F8E26779E4C00288E2D /* SignUpViewModel.swift */; };
-		A56D6F792678FA9600D9ED12 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F9026779EAC00288E2D /* SignUpMapper.swift */; };
 		A56D6F7A2678FD0D00D9ED12 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A585440E2677C06500682F6F /* SignUp.storyboard */; };
 		A56D6F7C26791FA000D9ED12 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6F7B26791FA000D9ED12 /* UseCaseFactory.swift */; };
 		A56D6F7F2679203200D9ED12 /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6F7E2679203200D9ED12 /* SignUpComposer.swift */; };
@@ -76,7 +75,6 @@
 		A5A44F8A267784C300288E2D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F98A1266F98E10047A4EE /* TestExtensions.swift */; };
 		A5A44F8C2677923100288E2D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F8B2677923100288E2D /* LoadingView.swift */; };
 		A5A44F8F26779E4C00288E2D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F8E26779E4C00288E2D /* SignUpViewModel.swift */; };
-		A5A44F9126779EAC00288E2D /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F9026779EAC00288E2D /* SignUpMapper.swift */; };
 		A5A44F9226779F7B00288E2D /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E2526739AC10045F2E8 /* SignUpPresenter.swift */; };
 		A5A44F932677A03500288E2D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11DD26652BBF003D4F0A /* Data.framework */; };
 		A5A44F942677A03500288E2D /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11DD26652BBF003D4F0A /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -393,7 +391,6 @@
 		A585440E2677C06500682F6F /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		A5A44F8B2677923100288E2D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A5A44F8E26779E4C00288E2D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		A5A44F9026779EAC00288E2D /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		A5AFDF2E2678D3B400E99919 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		A5BC11CC266524D9003D4F0A /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BC11CF266524D9003D4F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -837,7 +834,6 @@
 			isa = PBXGroup;
 			children = (
 				A5FA2E2526739AC10045F2E8 /* SignUpPresenter.swift */,
-				A5A44F9026779EAC00288E2D /* SignUpMapper.swift */,
 				A5A44F8E26779E4C00288E2D /* SignUpViewModel.swift */,
 			);
 			path = SignUp;
@@ -1749,7 +1745,6 @@
 			files = (
 				A5A44F8C2677923100288E2D /* LoadingView.swift in Sources */,
 				A5FA2E2E26739B8D0045F2E8 /* AlertView.swift in Sources */,
-				A56D6F792678FA9600D9ED12 /* SignUpMapper.swift in Sources */,
 				A56D6F782678FA7B00D9ED12 /* SignUpViewModel.swift in Sources */,
 				A5EC87BA267A6FEB006E5AA6 /* Validation.swift in Sources */,
 			);
@@ -1764,7 +1759,6 @@
 				A5FA2E342673D3F00045F2E8 /* AccountModelFactory.swift in Sources */,
 				A5EC87B8267A6780006E5AA6 /* Model.swift in Sources */,
 				A5A44F8A267784C300288E2D /* TestExtensions.swift in Sources */,
-				A5A44F9126779EAC00288E2D /* SignUpMapper.swift in Sources */,
 				A58543E52677A67B00682F6F /* LoadingViewSpy.swift in Sources */,
 				A5A44F8F26779E4C00288E2D /* SignUpViewModel.swift in Sources */,
 				A58543E82677A73200682F6F /* TestFactories.swift in Sources */,
