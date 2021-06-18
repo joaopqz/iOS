@@ -15,7 +15,7 @@ public struct SignUpViewModel: Model{
     }
     
     public func toAddAccountModel() -> AddAccountModel{
-        return AddAccountModel(name: self.name!, email: self.email!, password: self.password!, passwordConfimation: self.passwordConfirmation!)
+        return AddAccountModel(name: self.name!, email: self.email!, password: self.password!, passwordConfirmation: self.passwordConfirmation!)
     }
     
 }

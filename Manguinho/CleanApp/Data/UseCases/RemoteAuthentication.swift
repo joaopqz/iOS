@@ -1,7 +1,7 @@
 import Foundation
 import Domain
 
-public final class RemoteAddAccount: AddAccount {
+public final class RemoteAuthentication: Authentication {
     private let url: URL
     private let httpClient: HttpPostClient
 
@@ -10,8 +10,8 @@ public final class RemoteAddAccount: AddAccount {
         self.httpClient = httpClient
     }
 
-    public func add(addAccountModel: AddAccountModel, completion: @escaping (AddAccount.Result) -> Void) {
-        httpClient.post(to: url, with: addAccountModel.toData()) { [weak self] result in
+    public func auth(authenticationModel: AuthenticationModel, completion: @escaping (Authentication.Result) -> Void) {
+        httpClient.post(to: url, with: authenticationModel.toData()) { [weak self] result in
             guard self != nil else { return }
             switch result {
             case .success(let data):
@@ -22,13 +22,10 @@ public final class RemoteAddAccount: AddAccount {
                 }
             case .failure(let error):
                 switch error {
-                case .forbidden:
-                    completion(.failure(.emailInUse))
-                default:
-                    completion(.failure(.unexpected))
+                case .unauthorized: completion(.failure(.expiredSession))
+                default: completion(.failure(.unexpected))
                 }
             }
         }
     }
 }
-
