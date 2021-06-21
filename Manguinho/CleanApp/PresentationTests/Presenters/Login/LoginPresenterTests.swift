@@ -12,7 +12,7 @@ class LoginPresenterTests: XCTestCase {
         XCTAssertTrue(NSDictionary(dictionary: validationSpy.data!).isEqual(to: viewModel.toJson()!))
     }
     
-    func test_signUp_should_show_error_message_if_validation_fails(){
+    func test_login_should_show_error_message_if_validation_fails(){
         let alertViewSpy = AlertViewSpy()
         let validationSpy = ValidationSpy()
         let sut = makeSut(alertView: alertViewSpy, validation: validationSpy)
@@ -22,15 +22,15 @@ class LoginPresenterTests: XCTestCase {
             exp.fulfill()
         }
         validationSpy.simulateError()
-        sut.signUp(viewModel: makeSingUpViewModel())
+        sut.login(viewModel: makeLoginViewModel())
         wait(for: [exp], timeout: 1)
     }
 }
 
 extension LoginPresenterTests{
     
-    func makeSut(validation: ValidationSpy = ValidationSpy(),file: StaticString = #filePath, line: UInt = #line) -> LoginPresenter {
-        let sut = LoginPresenter(alertView: alertView, addAccount: addAccount, loadingView: loadingView, validation: validation)
+    func makeSut(alertView: AlertViewSpy = AlertViewSpy(), validation: ValidationSpy = ValidationSpy(),file: StaticString = #filePath, line: UInt = #line) -> LoginPresenter {
+        let sut = LoginPresenter(alertView: alertView, validation: validation)
         checkMemoryLeak(for: sut, file: file, line: line)
         return sut
     }

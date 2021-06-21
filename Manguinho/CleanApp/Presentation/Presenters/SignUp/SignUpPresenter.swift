@@ -1,6 +1,5 @@
 import Foundation
 import Domain
-import Presentation
 
 public final class SignUpPresenter {
     

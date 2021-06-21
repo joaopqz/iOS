@@ -36,6 +36,8 @@
 		A55B66252680B06700788F0B /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B66242680B06700788F0B /* LoginPresenterTests.swift */; };
 		A55B66272680B17C00788F0B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B66262680B17C00788F0B /* LoginViewModel.swift */; };
 		A55B66292680B1E400788F0B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B66282680B1E400788F0B /* LoginPresenter.swift */; };
+		A55B662B2680B53000788F0B /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E2526739AC10045F2E8 /* SignUpPresenter.swift */; };
+		A55B662D2680B6BA00788F0B /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543E72677A73200682F6F /* TestFactories.swift */; };
 		A564CA302667D072002DC162 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564CA2F2667D072002DC162 /* DomainError.swift */; };
 		A56D6EFF2678E25E00D9ED12 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6EFE2678E25E00D9ED12 /* UIViewControllerExtensions.swift */; };
 		A56D6F012678E3FC00D9ED12 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6F002678E3FC00D9ED12 /* Storyboarded.swift */; };
@@ -69,7 +71,6 @@
 		A58543DC2677A5B400682F6F /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543DB2677A5B400682F6F /* AlertViewSpy.swift */; };
 		A58543E32677A63D00682F6F /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543E22677A63D00682F6F /* AddAccountSpy.swift */; };
 		A58543E52677A67B00682F6F /* LoadingViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543E42677A67B00682F6F /* LoadingViewSpy.swift */; };
-		A58543E82677A73200682F6F /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543E72677A73200682F6F /* TestFactories.swift */; };
 		A58543F72677BC6A00682F6F /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58543EE2677BC6900682F6F /* UI.framework */; };
 		A58543FC2677BC6A00682F6F /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58543FB2677BC6A00682F6F /* SignUpViewControllerTests.swift */; };
 		A58544052677BD6E00682F6F /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FA2E0E267389ED0045F2E8 /* Presentation.framework */; };
@@ -94,8 +95,6 @@
 		A5875B00267CEE0A0044ABFC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875AFE267CED760044ABFC /* NavigationController.swift */; };
 		A5A44F8A267784C300288E2D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F98A1266F98E10047A4EE /* TestExtensions.swift */; };
 		A5A44F8C2677923100288E2D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F8B2677923100288E2D /* LoadingView.swift */; };
-		A5A44F8F26779E4C00288E2D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F8E26779E4C00288E2D /* SignUpViewModel.swift */; };
-		A5A44F9226779F7B00288E2D /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E2526739AC10045F2E8 /* SignUpPresenter.swift */; };
 		A5A44F932677A03500288E2D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11DD26652BBF003D4F0A /* Data.framework */; };
 		A5A44F942677A03500288E2D /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11DD26652BBF003D4F0A /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5AFDF2F2678D3B400E99919 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFDF2E2678D3B400E99919 /* TestExtensions.swift */; };
@@ -1943,6 +1942,7 @@
 				A5A44F8C2677923100288E2D /* LoadingView.swift in Sources */,
 				A5FA2E2E26739B8D0045F2E8 /* AlertView.swift in Sources */,
 				A56D6F782678FA7B00D9ED12 /* SignUpViewModel.swift in Sources */,
+				A55B662B2680B53000788F0B /* SignUpPresenter.swift in Sources */,
 				A55B66272680B17C00788F0B /* LoginViewModel.swift in Sources */,
 				A5EC87BA267A6FEB006E5AA6 /* Validation.swift in Sources */,
 			);
@@ -1953,15 +1953,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A58543E32677A63D00682F6F /* AddAccountSpy.swift in Sources */,
-				A5A44F9226779F7B00288E2D /* SignUpPresenter.swift in Sources */,
 				A5FA2E342673D3F00045F2E8 /* AccountModelFactory.swift in Sources */,
 				A5EC87B8267A6780006E5AA6 /* Model.swift in Sources */,
 				A55B66252680B06700788F0B /* LoginPresenterTests.swift in Sources */,
 				A5A44F8A267784C300288E2D /* TestExtensions.swift in Sources */,
 				A58543E52677A67B00682F6F /* LoadingViewSpy.swift in Sources */,
-				A5A44F8F26779E4C00288E2D /* SignUpViewModel.swift in Sources */,
-				A58543E82677A73200682F6F /* TestFactories.swift in Sources */,
 				A5EC87BE267A7052006E5AA6 /* ValidationSpy.swift in Sources */,
+				A55B662D2680B6BA00788F0B /* TestFactories.swift in Sources */,
 				A58543DC2677A5B400682F6F /* AlertViewSpy.swift in Sources */,
 				A5FA2E1C267389ED0045F2E8 /* SignUpPresenterTests.swift in Sources */,
 			);
