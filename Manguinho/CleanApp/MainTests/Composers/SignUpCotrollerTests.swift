@@ -3,12 +3,12 @@ import Main
 import UI
 import Validation
 
-class SignUpComposerTests: XCTestCase {
+class SignUpCotrollerTests: XCTestCase {
 
     func test_background_request_should_complete_on_main_thread(){
        let (sut, addAccountSpy) = makeSut()
         sut.loadViewIfNeeded()
-        sut.signUp?(makeSingUpViewModel())
+        sut.signUp?(makeSignUpViewModel())
         let exp = expectation(description: "Waiting")
         DispatchQueue.global().async {
             addAccountSpy.completeWithError(.unexpected)
@@ -32,7 +32,7 @@ class SignUpComposerTests: XCTestCase {
     
 }
 
-extension SignUpComposerTests{
+extension SignUpCotrollerTests{
     func makeSut(file: StaticString = #filePath, line: UInt = #line) -> (sut: SignUpViewController, addAccountSpy: AddAccountSpy){
         let addAccountSpy = AddAccountSpy()
         let sut = makeSignUpController(addAccount: MainQueueDispatchDecorator(addAccountSpy))
