@@ -28,7 +28,7 @@ public final class SignUpPresenter {
                     var errorMessage: String!
                     switch error {
                     case .emailInUse:
-                        errorMessage = "Esse e-mail já está em uso."
+                        errorMessage = "Esse e-mail já está em uso!!"
                     default:
                         errorMessage = "Algo inesperado aconteceu, tente novamente em alguns instantes!!"
                     }
