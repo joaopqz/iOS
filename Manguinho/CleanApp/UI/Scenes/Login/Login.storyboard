@@ -88,8 +88,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTF" destination="MLS-8S-fGf" id="z0d-MS-Kt7"/>
                         <outlet property="loadingIndicator" destination="wiG-Yz-H6T" id="m8w-dP-fye"/>
                         <outlet property="loginButton" destination="aLG-wv-513" id="Fth-YX-6fY"/>
+                        <outlet property="passwordTF" destination="4lB-io-KeT" id="f26-tD-fHl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
