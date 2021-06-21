@@ -33,6 +33,9 @@
 		A52AF6A126727A0100876CA2 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AF6A026727A0100876CA2 /* AlamofireAdapter.swift */; };
 		A52AF6A526727BA600876CA2 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52AF6A426727BA600876CA2 /* UrlProtocolStub.swift */; };
 		A5518A322677CDF500515DE6 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F8E26779E4C00288E2D /* SignUpViewModel.swift */; };
+		A55B66252680B06700788F0B /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B66242680B06700788F0B /* LoginPresenterTests.swift */; };
+		A55B66272680B17C00788F0B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B66262680B17C00788F0B /* LoginViewModel.swift */; };
+		A55B66292680B1E400788F0B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B66282680B1E400788F0B /* LoginPresenter.swift */; };
 		A564CA302667D072002DC162 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564CA2F2667D072002DC162 /* DomainError.swift */; };
 		A56D6EFF2678E25E00D9ED12 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6EFE2678E25E00D9ED12 /* UIViewControllerExtensions.swift */; };
 		A56D6F012678E3FC00D9ED12 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6F002678E3FC00D9ED12 /* Storyboarded.swift */; };
@@ -393,6 +396,9 @@
 		A51CC6D5267BA0C800B14812 /* ValidationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationSpy.swift; sourceTree = "<group>"; };
 		A52AF6A026727A0100876CA2 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		A52AF6A426727BA600876CA2 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
+		A55B66242680B06700788F0B /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		A55B66262680B17C00788F0B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Presentation/Presenters/Login/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A55B66282680B1E400788F0B /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = Presentation/Presenters/Login/LoginPresenter.swift; sourceTree = SOURCE_ROOT; };
 		A564CA2F2667D072002DC162 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		A56D6EFE2678E25E00D9ED12 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		A56D6F002678E3FC00D9ED12 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
@@ -698,6 +704,23 @@
 				A52AF6A426727BA600876CA2 /* UrlProtocolStub.swift */,
 			);
 			path = Http;
+			sourceTree = "<group>";
+		};
+		A55B66222680B02F00788F0B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A55B66262680B17C00788F0B /* LoginViewModel.swift */,
+				A55B66282680B1E400788F0B /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A55B66232680B03F00788F0B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A55B66242680B06700788F0B /* LoginPresenterTests.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		A564CA292667C0E3002DC162 /* UseCases */ = {
@@ -1164,6 +1187,7 @@
 		A5FA2E2F26739BB30045F2E8 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				A55B66222680B02F00788F0B /* Login */,
 				A5A44F8D26779E2300288E2D /* SignUp */,
 			);
 			path = Presenters;
@@ -1172,6 +1196,7 @@
 		A5FA2E3026739CE70045F2E8 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				A55B66232680B03F00788F0B /* Login */,
 				A58543D92677A2E400682F6F /* SignUp */,
 			);
 			path = Presenters;
@@ -1914,9 +1939,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55B66292680B1E400788F0B /* LoginPresenter.swift in Sources */,
 				A5A44F8C2677923100288E2D /* LoadingView.swift in Sources */,
 				A5FA2E2E26739B8D0045F2E8 /* AlertView.swift in Sources */,
 				A56D6F782678FA7B00D9ED12 /* SignUpViewModel.swift in Sources */,
+				A55B66272680B17C00788F0B /* LoginViewModel.swift in Sources */,
 				A5EC87BA267A6FEB006E5AA6 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1929,6 +1956,7 @@
 				A5A44F9226779F7B00288E2D /* SignUpPresenter.swift in Sources */,
 				A5FA2E342673D3F00045F2E8 /* AccountModelFactory.swift in Sources */,
 				A5EC87B8267A6780006E5AA6 /* Model.swift in Sources */,
+				A55B66252680B06700788F0B /* LoginPresenterTests.swift in Sources */,
 				A5A44F8A267784C300288E2D /* TestExtensions.swift in Sources */,
 				A58543E52677A67B00682F6F /* LoadingViewSpy.swift in Sources */,
 				A5A44F8F26779E4C00288E2D /* SignUpViewModel.swift in Sources */,

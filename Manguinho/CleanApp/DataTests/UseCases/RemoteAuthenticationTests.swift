@@ -31,6 +31,7 @@ class RemoteAuthenticationTests: XCTestCase {
             httpClientSpy.completeWithError(.unauthorized)
         })
     }
+    
 }
 
 extension RemoteAuthenticationTests{
