@@ -14,6 +14,9 @@ class LoginViewControllerTests: XCTestCase {
         XCTAssertNotNil(makeSut() as LoadingView)
     }
     
+    func test_sut_implements_alertView(){
+        XCTAssertNotNil(makeSut() as AlertView)
+    }
 }
 
 extension LoginViewControllerTests {
