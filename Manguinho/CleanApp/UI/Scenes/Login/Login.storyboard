@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sign Up View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="Y6W-OH-hqX" customClass="SignUpViewController" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLG-wv-513">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLG-wv-513">
                                 <rect key="frame" x="32" y="426" width="350" height="60"/>
                                 <color key="backgroundColor" red="0.53333333329999999" green="0.054901960780000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -79,17 +79,17 @@
                             <constraint firstItem="4lB-io-KeT" firstAttribute="trailing" secondItem="MLS-8S-fGf" secondAttribute="trailing" id="aQY-G6-9ma"/>
                             <constraint firstItem="T4e-JP-9eM" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="b9V-fa-DGK"/>
                             <constraint firstItem="4lB-io-KeT" firstAttribute="top" secondItem="MLS-8S-fGf" secondAttribute="bottom" constant="16" id="bCJ-8i-rOD"/>
+                            <constraint firstItem="aLG-wv-513" firstAttribute="leading" secondItem="MLS-8S-fGf" secondAttribute="leading" id="eIj-R5-rRR"/>
                             <constraint firstItem="T4e-JP-9eM" firstAttribute="top" secondItem="MCK-BW-rHP" secondAttribute="bottom" constant="24" id="gDx-lZ-Xgi"/>
+                            <constraint firstItem="aLG-wv-513" firstAttribute="trailing" secondItem="MLS-8S-fGf" secondAttribute="trailing" id="oGw-Wd-CRF"/>
                             <constraint firstItem="4lB-io-KeT" firstAttribute="leading" secondItem="MLS-8S-fGf" secondAttribute="leading" id="rfR-SR-iNU"/>
                             <constraint firstItem="MLS-8S-fGf" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="z3O-mS-Wrr"/>
                             <constraint firstItem="wiG-Yz-H6T" firstAttribute="top" secondItem="aLG-wv-513" secondAttribute="bottom" constant="16" id="z6c-mS-rJd"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailTF" destination="MLS-8S-fGf" id="uhQ-tf-0nH"/>
-                        <outlet property="loadingIndicator" destination="wiG-Yz-H6T" id="ey7-Vz-7wG"/>
-                        <outlet property="passwordTF" destination="4lB-io-KeT" id="8qF-DG-Oe9"/>
-                        <outlet property="saveButton" destination="aLG-wv-513" id="gBL-Sx-yHd"/>
+                        <outlet property="loadingIndicator" destination="wiG-Yz-H6T" id="m8w-dP-fye"/>
+                        <outlet property="loginButton" destination="aLG-wv-513" id="Fth-YX-6fY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
