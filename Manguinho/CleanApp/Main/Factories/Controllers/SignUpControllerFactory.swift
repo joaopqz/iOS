@@ -3,7 +3,6 @@ import UI
 import Presentation
 import Validation
 import Domain
-import Infra
 
 public func makeSignUpController(addAccount: AddAccount) -> SignUpViewController{
     let controller = SignUpViewController.instantiate()
