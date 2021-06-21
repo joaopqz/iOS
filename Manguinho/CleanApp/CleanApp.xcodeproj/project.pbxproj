@@ -68,7 +68,6 @@
 		A56D6F6D2678F5B000D9ED12 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56D6F072678EB6F00D9ED12 /* Validation.framework */; };
 		A56D6F6E2678F5B000D9ED12 /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A56D6F072678EB6F00D9ED12 /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A56D6F762678F86400D9ED12 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6F002678E3FC00D9ED12 /* Storyboarded.swift */; };
-		A56D6F772678F92400D9ED12 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA2E2526739AC10045F2E8 /* SignUpPresenter.swift */; };
 		A56D6F782678FA7B00D9ED12 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F8E26779E4C00288E2D /* SignUpViewModel.swift */; };
 		A56D6F7C26791FA000D9ED12 /* RemoteAddAccountFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6F7B26791FA000D9ED12 /* RemoteAddAccountFactory.swift */; };
 		A56D6F7F2679203200D9ED12 /* SignUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6F7E2679203200D9ED12 /* SignUpFactory.swift */; };
@@ -1853,7 +1852,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A56D6F772678F92400D9ED12 /* SignUpPresenter.swift in Sources */,
 				A5EC87A6267A29D8006E5AA6 /* WeakVarProxy.swift in Sources */,
 				A56D6F2C2678F46100D9ED12 /* AppDelegate.swift in Sources */,
 				A5875AEF267CDF430044ABFC /* EmailValidatorAdapterFactory.swift in Sources */,
