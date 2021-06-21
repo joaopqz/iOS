@@ -115,6 +115,7 @@
 		A5BE886C2680F93300EB30B4 /* RemoteAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE886B2680F93300EB30B4 /* RemoteAuthenticationFactory.swift */; };
 		A5BE886E2680F9A200EB30B4 /* LoginControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE886D2680F9A200EB30B4 /* LoginControllerFactory.swift */; };
 		A5BE886F2680FA6E00EB30B4 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B662E2680C09900788F0B /* AuthenticationSpy.swift */; };
+		A5BE88722681001200EB30B4 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BE88712681001200EB30B4 /* Welcome.storyboard */; };
 		A5D06B76266E426200960538 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D06B75266E426200960538 /* HttpError.swift */; };
 		A5E238E4267D091A00CF3904 /* RemoteAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E238E3267D091A00CF3904 /* RemoteAuthenticationTests.swift */; };
 		A5E553332670EEF6002624DB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A5E553322670EEF6002624DB /* Alamofire */; };
@@ -475,6 +476,7 @@
 		A5BE88692680F82000EB30B4 /* LoginCotrollerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCotrollerTests.swift; sourceTree = "<group>"; };
 		A5BE886B2680F93300EB30B4 /* RemoteAuthenticationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationFactory.swift; sourceTree = "<group>"; };
 		A5BE886D2680F9A200EB30B4 /* LoginControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerFactory.swift; sourceTree = "<group>"; };
+		A5BE88712681001200EB30B4 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		A5D06B75266E426200960538 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		A5E238E3267D091A00CF3904 /* RemoteAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationTests.swift; sourceTree = "<group>"; };
 		A5EC87A5267A29D8006E5AA6 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
@@ -1028,6 +1030,7 @@
 		A5AFDF2B2678D08900E99919 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A5BE88702680FFDF00EB30B4 /* Welcome */,
 				A55B66302680D82000788F0B /* Login */,
 				A5AFDF292678D04700E99919 /* SignUp */,
 			);
@@ -1134,6 +1137,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5BE88702680FFDF00EB30B4 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				A5BE88712681001200EB30B4 /* Welcome.storyboard */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		A5EC87A4267A29C7006E5AA6 /* Proxies */ = {
@@ -1754,6 +1765,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A585440F2677C06500682F6F /* SignUp.storyboard in Resources */,
+				A5BE88722681001200EB30B4 /* Welcome.storyboard in Resources */,
 				A5875AF2267CE13C0044ABFC /* Images.xcassets in Resources */,
 				A55B66322680D83B00788F0B /* Login.storyboard in Resources */,
 			);
