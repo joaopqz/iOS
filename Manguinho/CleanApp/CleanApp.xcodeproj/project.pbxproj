@@ -42,6 +42,7 @@
 		A55B66352680D8D000788F0B /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B66342680D8D000788F0B /* LoginViewControllerTests.swift */; };
 		A55B66372680D93500788F0B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B66362680D93500788F0B /* LoginViewController.swift */; };
 		A55B66392680DACC00788F0B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A585440A2677BF6800682F6F /* SignUpViewController.swift */; };
+		A55B663E2680E57E00788F0B /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F98A1266F98E10047A4EE /* TestExtensions.swift */; };
 		A564CA302667D072002DC162 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564CA2F2667D072002DC162 /* DomainError.swift */; };
 		A56D6EFF2678E25E00D9ED12 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6EFE2678E25E00D9ED12 /* UIViewControllerExtensions.swift */; };
 		A56D6F012678E3FC00D9ED12 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D6F002678E3FC00D9ED12 /* Storyboarded.swift */; };
@@ -1921,6 +1922,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5875AE0267CD8320044ABFC /* AddAccountIntegrationTests.swift in Sources */,
+				A55B663E2680E57E00788F0B /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
