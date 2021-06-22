@@ -27,6 +27,7 @@ public final class NavigationController: UINavigationController {
     
     public func setRootViewController(_ viewController: UIViewController){
         setViewControllers([viewController], animated: true)
+        viewController.navigationItem.backButtonTitle = ""
     }
     
     public func pushViewController(_ viewController: UIViewController) {

@@ -96,7 +96,6 @@
 		A5875AFC267CEB7B0044ABFC /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875AFB267CEB7B0044ABFC /* RoundedTextField.swift */; };
 		A5875AFD267CED110044ABFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5875AF1267CE13C0044ABFC /* Images.xcassets */; };
 		A5875AFF267CED760044ABFC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875AFE267CED760044ABFC /* NavigationController.swift */; };
-		A5875B00267CEE0A0044ABFC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875AFE267CED760044ABFC /* NavigationController.swift */; };
 		A597A5082682194C0058AAED /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A5072682194C0058AAED /* WelcomeRouterTests.swift */; };
 		A5A44F8A267784C300288E2D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F98A1266F98E10047A4EE /* TestExtensions.swift */; };
 		A5A44F8C2677923100288E2D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F8B2677923100288E2D /* LoadingView.swift */; };
@@ -1900,7 +1899,6 @@
 				A56D6F2C2678F46100D9ED12 /* AppDelegate.swift in Sources */,
 				A5875AEF267CDF430044ABFC /* EmailValidatorAdapterFactory.swift in Sources */,
 				A56D6F762678F86400D9ED12 /* Storyboarded.swift in Sources */,
-				A5875B00267CEE0A0044ABFC /* NavigationController.swift in Sources */,
 				A5BE886E2680F9A200EB30B4 /* LoginControllerFactory.swift in Sources */,
 				A5875AF9267CEAED0044ABFC /* Color.swift in Sources */,
 				A5EC87AD267A3581006E5AA6 /* Environment.swift in Sources */,

@@ -1,3 +1,4 @@
+import Foundation
 
 public final class WelcomeRouter {
     private let nav: NavigationController
