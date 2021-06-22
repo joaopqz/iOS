@@ -4,7 +4,11 @@ import Presentation
 import Validation
 import Domain
 
-public func makeSignUpController(addAccount: AddAccount) -> SignUpViewController{
+public func makeSignUpController() -> SignUpViewController{
+    return makeSignUpController(with: makeRemoteAddAccount())
+}
+
+public func makeSignUpController(with addAccount: AddAccount) -> SignUpViewController{
     let controller = SignUpViewController.instantiate()
     let validationComposite = ValidationComposite(validations: makeSignUpValidations())
     let presenter = SignUpPresenter(alertView: WeakVarProxy(controller), addAccount: addAccount, loadingView: WeakVarProxy(controller), validation: validationComposite)

@@ -102,6 +102,7 @@
 		A5A44F932677A03500288E2D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11DD26652BBF003D4F0A /* Data.framework */; };
 		A5A44F942677A03500288E2D /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11DD26652BBF003D4F0A /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5A5020026822CED00B50742 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A501FF26822CED00B50742 /* WelcomeRouter.swift */; };
+		A5A502032682346000B50742 /* WelcomeControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A502022682345F00B50742 /* WelcomeControllerFactory.swift */; };
 		A5A5A5FA26810A33006BF953 /* WelcomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5A5F926810A33006BF953 /* WelcomeViewControllerTests.swift */; };
 		A5AFDF2F2678D3B400E99919 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AFDF2E2678D3B400E99919 /* TestExtensions.swift */; };
 		A5BC11D526652A4E003D4F0A /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC11D426652A4E003D4F0A /* AddAccount.swift */; };
@@ -466,6 +467,7 @@
 		A5A44F8B2677923100288E2D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A5A44F8E26779E4C00288E2D /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		A5A501FF26822CED00B50742 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		A5A502022682345F00B50742 /* WelcomeControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeControllerFactory.swift; sourceTree = "<group>"; };
 		A5A5A5F926810A33006BF953 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
 		A5AFDF2E2678D3B400E99919 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		A5BC11CC266524D9003D4F0A /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -987,6 +989,7 @@
 			children = (
 				A56D6F7E2679203200D9ED12 /* SignUpControllerFactory.swift */,
 				A5BE886D2680F9A200EB30B4 /* LoginControllerFactory.swift */,
+				A5A502022682345F00B50742 /* WelcomeControllerFactory.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1909,6 +1912,7 @@
 				A5875AE8267CDD8D0044ABFC /* ApiUrlFactory.swift in Sources */,
 				A5875AEB267CDE640044ABFC /* AlamofireAdapterFactory.swift in Sources */,
 				A56D6F7C26791FA000D9ED12 /* RemoteAddAccountFactory.swift in Sources */,
+				A5A502032682346000B50742 /* WelcomeControllerFactory.swift in Sources */,
 				A56D6F2E2678F46100D9ED12 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
