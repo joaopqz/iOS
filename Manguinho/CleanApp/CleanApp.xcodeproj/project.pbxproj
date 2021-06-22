@@ -97,6 +97,7 @@
 		A5875AFD267CED110044ABFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5875AF1267CE13C0044ABFC /* Images.xcassets */; };
 		A5875AFF267CED760044ABFC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875AFE267CED760044ABFC /* NavigationController.swift */; };
 		A5875B00267CEE0A0044ABFC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5875AFE267CED760044ABFC /* NavigationController.swift */; };
+		A597A5082682194C0058AAED /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597A5072682194C0058AAED /* WelcomeRouterTests.swift */; };
 		A5A44F8A267784C300288E2D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F98A1266F98E10047A4EE /* TestExtensions.swift */; };
 		A5A44F8C2677923100288E2D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A44F8B2677923100288E2D /* LoadingView.swift */; };
 		A5A44F932677A03500288E2D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BC11DD26652BBF003D4F0A /* Data.framework */; };
@@ -461,6 +462,7 @@
 		A5875AF5267CEA5B0044ABFC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A5875AFB267CEB7B0044ABFC /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		A5875AFE267CED760044ABFC /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		A597A5072682194C0058AAED /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
 		A5A44F8B2677923100288E2D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A5A44F8E26779E4C00288E2D /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		A5A5A5F926810A33006BF953 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
@@ -1018,6 +1020,7 @@
 			isa = PBXGroup;
 			children = (
 				A5A5A5F926810A33006BF953 /* WelcomeViewControllerTests.swift */,
+				A597A5072682194C0058AAED /* WelcomeRouterTests.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -1955,6 +1958,7 @@
 				A55B66352680D8D000788F0B /* LoginViewControllerTests.swift in Sources */,
 				A58543FC2677BC6A00682F6F /* SignUpViewControllerTests.swift in Sources */,
 				A5A5A5FA26810A33006BF953 /* WelcomeViewControllerTests.swift in Sources */,
+				A597A5082682194C0058AAED /* WelcomeRouterTests.swift in Sources */,
 				A5AFDF2F2678D3B400E99919 /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
